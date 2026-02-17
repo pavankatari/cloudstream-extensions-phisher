@@ -53,12 +53,9 @@ class Movies4u : MainAPI() {
 
     override val mainPage = mainPageOf(
         "" to "Home",
-        "category/bollywood/" to "BollyWood",
+        "category/telugu/" to "Telugu",
         "category/hollywood/" to "HollyWood",
-        "category/web-series/" to "WEB-Series",
-        "category/anime/" to "Anime / Animation",
-        "category/k-drama/" to "K-Drama",
-        "category/south-hindi-movies/" to "South Hindi Movies"
+        "category/web-series/" to "WEB-Series"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
